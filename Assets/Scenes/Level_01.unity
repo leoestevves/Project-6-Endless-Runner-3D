@@ -791,7 +791,7 @@ GameObject:
   - component: {fileID: 1292669988}
   m_Layer: 0
   m_Name: GameManager
-  m_TagString: Untagged
+  m_TagString: GameManager
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -810,7 +810,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   obstacle: {fileID: 8537709224950994854, guid: 541b7ac8e77594a46a2d349041cf8c99, type: 3}
   spawnPoint: {fileID: 572408802}
-  obstacleSpawnFirstRange: 0.5
+  obstacleSpawnFirstRange: 0.6
   obstacleSpawnLastRange: 2
   scoreText: {fileID: 452379803}
   playButton: {fileID: 1472988211}

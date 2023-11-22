@@ -16,17 +16,6 @@ public class GameManager : MonoBehaviour
     [SerializeField] GameObject playButton;
     [SerializeField] GameObject player;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 
     IEnumerator SpawnObstacles()
     {
@@ -40,9 +29,9 @@ public class GameManager : MonoBehaviour
         
     }
 
-    void ScoreUp()
+    public void AddScore(int scoreToAdd)
     {
-        score++;
+        score = score + scoreToAdd;
         scoreText.text = score.ToString();
     }
 
@@ -51,7 +40,6 @@ public class GameManager : MonoBehaviour
         player.SetActive(true);
         playButton.SetActive(false);
 
-        StartCoroutine("SpawnObstacles");
-        InvokeRepeating("ScoreUp", 2f, 2f);
+        StartCoroutine("SpawnObstacles");        
     }
 }
