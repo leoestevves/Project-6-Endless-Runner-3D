@@ -5,16 +5,16 @@ using TMPro;
 
 public class GameManager : MonoBehaviour
 {
-    public GameObject obstacle;
-    public Transform spawnPoint;
+    [SerializeField] GameObject obstacle;
+    [SerializeField] Transform spawnPoint;
     int score = 0;
 
-    public float obstacleSpawnFirstRange;
-    public float obstacleSpawnLastRange;
+    [SerializeField] float obstacleSpawnFirstRange;
+    [SerializeField] float obstacleSpawnLastRange;
 
-    public TextMeshProUGUI scoreText;
-    public GameObject playButton;
-    public GameObject player;
+    [SerializeField] TextMeshProUGUI scoreText;
+    [SerializeField] GameObject playButton;
+    [SerializeField] GameObject player;
 
     // Start is called before the first frame update
     void Start()

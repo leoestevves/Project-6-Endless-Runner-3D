@@ -4,9 +4,9 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
-{
+{    
+    [SerializeField] float jumpForce;
     Rigidbody playerRigidbody;
-    public float jumpForce;
     bool canJump;
 
     private void Awake()
